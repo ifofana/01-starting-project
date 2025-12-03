@@ -26,10 +26,6 @@ export class TasksComponent {
     return this.tasksService.getUserTasks(this.userId);
   }
 
-  onClompleteTask(id: string) {
-    this.tasksService.removeTask(id);
-  }
-
   onStartAddTask() {    
     this.isAddingTask = true;
   }
